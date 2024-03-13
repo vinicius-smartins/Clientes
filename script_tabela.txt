@@ -1,0 +1,16 @@
+CREATE TABLE `clientes` (
+  `codigo_cliente` int NOT NULL AUTO_INCREMENT,
+  `nome_cliente` varchar(45) NOT NULL,
+  `documento_cliente` varchar(45) NOT NULL,
+  `email_cliente` varchar(45) NOT NULL,
+  `cliente_bloqueado` tinyint NOT NULL,
+  `telefone_cliente` varchar(45) NOT NULL,
+  `tipo_cliente` tinyint NOT NULL,
+  `inscricao_estadual_cliente` varchar(45) NOT NULL,
+  `cliente_isento` tinyint NOT NULL,
+  `genero_cliente` int DEFAULT NULL,
+  `data_nascimento_cliente` datetime DEFAULT NULL,
+  `senha_cliente` varchar(45) NOT NULL,
+  `data_cadastro_cliente` datetime NOT NULL,
+  PRIMARY KEY (`codigo_cliente`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
